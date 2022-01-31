@@ -37,9 +37,11 @@ modules:
       - -DCMAKE_INSTALL_PREFIX=/app
       - -DCMAKE_BUILD_TYPE=Release
       - -DCMAKE_LIBRARY_PATH=/app/lib
+      - -DNO_AUTOSTART=true
     sources:
       - type: file
         path: org.cubocore.CoreKeyboard.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corekeyboard.git
-        tag: v4.3.0
+#        tag: v4.3.0
+        commit: cb1cef57975c7881b851c73c09a4c6f7a7479a37
