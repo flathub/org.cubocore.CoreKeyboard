@@ -28,7 +28,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.3.0
+        tag: v4.4.1
   - name: corekeyboard
     post-install:
       - install -Dp -m 644 org.cubocore.CoreKeyboard.appdata.xml /app/share/appdata/org.cubocore.CoreKeyboard.appdata.xml
@@ -43,5 +43,4 @@ modules:
         path: org.cubocore.CoreKeyboard.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corekeyboard.git
-#        tag: v4.3.0
-        commit: cb1cef57975c7881b851c73c09a4c6f7a7479a37
+        tag: v4.4.0
