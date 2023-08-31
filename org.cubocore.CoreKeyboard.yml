@@ -8,6 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
+  - --filesystem=xdg-config
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=org.kde.* # For showing in the system tray
 cleanup:
@@ -28,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.4.1
+        tag: v4.5.0
   - name: corekeyboard
     post-install:
       - install -Dp -m 644 org.cubocore.CoreKeyboard.appdata.xml /app/share/appdata/org.cubocore.CoreKeyboard.appdata.xml
@@ -43,4 +44,4 @@ modules:
         path: org.cubocore.CoreKeyboard.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corekeyboard.git
-        tag: v4.4.0
+        tag: v4.5.0
