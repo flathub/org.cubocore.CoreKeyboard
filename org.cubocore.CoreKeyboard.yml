@@ -10,7 +10,6 @@ finish-args:
   - --device=dri
   - --filesystem=xdg-config:create # flatpak linter causes error on xdg-config
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.* # For showing in the system tray
 cleanup:
   - /include
   - /lib/cmake
