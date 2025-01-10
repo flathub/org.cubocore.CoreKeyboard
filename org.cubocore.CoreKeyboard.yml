@@ -1,6 +1,6 @@
 app-id: org.cubocore.CoreKeyboard
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: '5.15-24.08'
 sdk: org.kde.Sdk
 command: corekeyboard
 finish-args:
@@ -26,6 +26,10 @@ modules:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
         tag: v4.5.0
+        commit: 647022384c3123f85b372b12503f7b0fa5328a1e
+        x-checker-data:
+          - type: git
+            tag-pattern: ^v([\d.]+)$
   - name: corekeyboard
     post-install:
       - install -Dp -m 644 org.cubocore.CoreKeyboard.appdata.xml /app/share/appdata/org.cubocore.CoreKeyboard.appdata.xml
@@ -38,3 +42,7 @@ modules:
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corekeyboard.git
         tag: v4.5.0
+        commit: b383ba463e827221f5e5307f45f87e701994db20
+        x-checker-data:
+          - type: git
+            tag-pattern: ^v([\d.]+)$
