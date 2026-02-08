@@ -1,0 +1,30 @@
+--- a/cc.cubocore.CoreKeyboard.desktop
++++ b/cc.cubocore.CoreKeyboard.desktop
+@@ -5,3 +5,3 @@
+ Exec=corekeyboard -platform xcb
+-Icon=cc.cubocore.CoreKeyboard
++Icon=org.cubocore.CoreKeyboard
+ Type=Application
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -28,4 +28,4 @@
+ #include <cprime/capplication.h>
+ 
+-const QString appID = QStringLiteral(APP_ID);
++const QString appID = QStringLiteral("org.cubocore.CoreKeyboard");
+ 
+--- a/cc.cubocore.CoreKeyboard.metainfo.xml
++++ b/cc.cubocore.CoreKeyboard.metainfo.xml
+@@ -5,4 +5,4 @@
+ <component type="desktop-application">
+-    <id>cc.cubocore.CoreKeyboard</id>
++    <id>org.cubocore.CoreKeyboard</id>
+ 
+     <metadata_license>CC0-1.0</metadata_license>
+@@ -12,4 +12,4 @@
+     <developer_name>CuboCore Group</developer_name>
+ 
+-    <launchable type="desktop-id">cc.cubocore.CoreKeyboard.desktop</launchable>
++    <launchable type="desktop-id">org.cubocore.CoreKeyboard.desktop</launchable>
+ 
+     <name>CoreKeyboard</name>
